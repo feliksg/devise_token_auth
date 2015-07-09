@@ -29,7 +29,7 @@ ActionDispatch::IntegrationTest.fixture_path = File.expand_path("../fixtures", _
 Minitest::Reporters.use! Minitest::Reporters::ProgressReporter.new
 
 class ActiveSupport::TestCase
-  ActiveRecord::Migration.check_pending!
+  # ActiveRecord::Migration.check_pending!
 
   # Setup all fixtures in test/fixtures/*.(yml|csv) for all tests in alphabetical order.
   #

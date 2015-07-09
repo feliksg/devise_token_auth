@@ -1,4 +1,5 @@
-class User < ActiveRecord::Base
+class User
+  include Mongoid::Document
   include DeviseTokenAuth::Concerns::User
 
   validates :operating_thetan, numericality: true, allow_nil: true
